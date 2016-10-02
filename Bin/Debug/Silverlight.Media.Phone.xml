@@ -1,0 +1,1953 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Silverlight.Media.Phone</name>
+    </assembly>
+    <members>
+        <member name="T:Silverlight.Media.CircularBuffer`1">
+            <summary>
+            Implements a circular buffer data structure.
+            </summary>
+            <typeparam name="T">Type of elements contained in the circular buffer.</typeparam>
+        </member>
+        <member name="F:Silverlight.Media.CircularBuffer`1.capacity">
+            <summary>
+            Maximum number of elements allowed in the circular buffer.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.CircularBuffer`1.size">
+            <summary>
+            Current number of elements in the circular buffer.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.CircularBuffer`1.head">
+            <summary>
+            Current reading index.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.CircularBuffer`1.tail">
+            <summary>
+            Current writing index.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.CircularBuffer`1.buffer">
+            <summary>
+            Array containing the elements of the circular buffer.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the CircularBuffer class.
+            </summary>
+            <param name="capacity">Maximum number of elements allowed in the circular bufffer.</param>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Initializes a new instance of the CircularBuffer class.
+            </summary>
+            <param name="capacity">Maximum number of elements allowed in the circular bufffer.</param>
+            <param name="allowOverflow">true if overflow is allowed, otherwise, false.</param>
+        </member>
+        <member name="P:Silverlight.Media.CircularBuffer`1.AllowOverflow">
+            <summary>
+            Gets or sets a value indicating whether the circular buffer allows overflow.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.CircularBuffer`1.Capacity">
+            <summary>
+            Gets or sets the maximum number of elements allowed in the circular buffer.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.CircularBuffer`1.Size">
+            <summary>
+            Gets the current number of elements in the circular buffer.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Contains(`0)">
+            <summary>
+            Searches the circular buffer for a particular item.
+            </summary>
+            <param name="item">Item for which to search.</param>
+            <returns>true if the item is found, otherwise, false.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Clear">
+            <summary>
+            Clears the circular buffer.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Put(`0[])">
+            <summary>
+            Writes data to the circular buffer.
+            </summary>
+            <param name="src">data to write to the circular buffer.</param>
+            <returns>Number of bytes written to the cirular buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Put(`0[],System.Int32,System.Int32)">
+            <summary>
+            Writes data to the circular buffer.
+            </summary>
+            <param name="src">Data to write to the circular buffer.</param>
+            <param name="offset">A 32-bit integer that represents the index in the src at which reading begins.</param>
+            <param name="count">Number of elements to write.</param>
+            <returns>Number of bytes written to the cirular buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Put(`0)">
+            <summary>
+            Writes a single element to the circular buffer.
+            </summary>
+            <param name="item">Item to write to the circular buffer.</param>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Skip(System.Int32)">
+            <summary>
+            Advances the read pointer a specified number of elements.
+            </summary>
+            <param name="count">A 32-bit integer that represents the number of elements to skip.</param>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Peek(System.Int32)">
+            <summary>
+            Reads a specified number of elements from the circular buffer without advancing the current read position.
+            </summary>
+            <param name="count">A 32-bit integer that represents the number of elements to read.</param>
+            <returns>An array containing the elements read.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Peek(`0[])">
+            <summary>
+            Reads elements from the circular buffer without advancing the current read position.
+            </summary>
+            <param name="dst">Buffer to receive the elements from the circular buffer.</param>
+            <returns>Number of bytes placed into the buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Peek(`0[],System.Int32,System.Int32)">
+            <summary>
+            Reads elements from the circular buffer without advancing the current read position.
+            </summary>
+            <param name="dst">Buffer to receive the elements from the circular buffer.</param>
+            <param name="offset">A 32-bit integer that represents the index in the src at which writing begins.</param>
+            <param name="count">Number of elements to read.</param>
+            <returns>Number of bytes placed into the buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Peek">
+            <summary>
+            Reads a single element from the circular buffer without advancing the current read position.
+            </summary>
+            <returns>Element read from the circular buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Get(System.Int32)">
+            <summary>
+            Reads a specified number of elements from the circular buffer and advances the current read position.
+            </summary>
+            <param name="count">A 32-bit integer that represents the number of elements to read.</param>
+            <returns>An array containing the elements read.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Get(`0[])">
+            <summary>
+            Reads elements from the circular buffer and advances the current read position.
+            </summary>
+            <param name="dst">Buffer to receive the elements from the circular buffer.</param>
+            <returns>Number of bytes placed into the buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Get(`0[],System.Int32,System.Int32)">
+            <summary>
+            Reads elements from the circular buffer and advances the current read position.
+            </summary>
+            <param name="dst">Buffer to receive the elements from the circular buffer.</param>
+            <param name="offset">A 32-bit integer that represents the index in the src at which writing begins.</param>
+            <param name="count">Number of elements to read.</param>
+            <returns>Number of bytes placed into the buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.Get">
+            <summary>
+            Reads a single element from the circular buffer and advances the current read position.
+            </summary>
+            <returns>Element read from the circular buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.CopyTo(`0[])">
+            <summary>
+            Copies the elements from the circular buffer to an array.
+            </summary>
+            <param name="array">Destination array.</param>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copies the elements from the circular buffer to an array.
+            </summary>
+            <param name="array">Destination array.</param>
+            <param name="arrayIndex">A 32-bit integer that represents the index in the array at which writing begins.</param>
+        </member>
+        <member name="M:Silverlight.Media.CircularBuffer`1.CopyTo(`0[],System.Int32,System.Int32)">
+            <summary>
+            Copies the elements from the circular buffer to an array.
+            </summary>
+            <param name="array">Destination array.</param>
+            <param name="arrayIndex">A 32-bit integer that represents the index in the array at which writing begins.</param>
+            <param name="count">Number of elements to copy.</param>
+        </member>
+        <member name="T:Silverlight.Media.Extensions.WebHeaderCollectionExtensions">
+            <summary>
+            Extension methods for the WebHeaderCollection class.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Extensions.WebHeaderCollectionExtensions.ToDictionary(System.Net.WebHeaderCollection)">
+            <summary>
+            Converts a WebHeaderCollection to an IDictionary&lt;string, string&gt;.
+            </summary>
+            <param name="webHeaderCollection">WebHeaderCollection to convert to an IDictionary&lt;string, string&gt;.</param>
+            <returns>IDictionary&lt;string, string&gt; representing the provided WebHeaderCollection.</returns>
+        </member>
+        <member name="T:Silverlight.Media.Metadata.ShoutcastMetadata">
+            <summary>
+            Parses MP3 stream metadata.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Metadata.ShoutcastMetadata.StreamTitle">
+            <summary>
+            Key for the stream title.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Metadata.ShoutcastMetadata.StreamUrl">
+            <summary>
+            Key for the stream url.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Metadata.ShoutcastMetadata.metadatas">
+            <summary>
+            Dictionary&lt;string, string&gt; to store the parsed metadata key/value pairs.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Metadata.ShoutcastMetadata.#ctor">
+            <summary>
+            Initializes a new instance of the ShoutcastMetadata class.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Metadata.ShoutcastMetadata.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the ShoutcastMetadata class.
+            </summary>
+            <param name="metadata">String representing the MP3 stream metadata.</param>
+        </member>
+        <member name="P:Silverlight.Media.Metadata.ShoutcastMetadata.Title">
+            <summary>
+            Gets a value representing the title from the audio stream metadata.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Metadata.ShoutcastMetadata.Url">
+            <summary>
+            Gets a value representing the url from the audio stream metadata.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Metadata.ShoutcastMetadata.Equals(System.Object)">
+            <summary>
+            Determines whether the specified Object is equal to the current Object
+            </summary>
+            <param name="obj">The object to compare with the current object.</param>
+            <returns>true if the specified Object is equal to the current Object; otherwise, false.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Metadata.ShoutcastMetadata.GetHashCode">
+            <summary>
+            Serves as a hash function for a particular type.
+            </summary>
+            <returns>A hash code for the current Object.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Metadata.ShoutcastMetadata.ParseMetadata(System.String)">
+            <summary>
+            Parses the metadata from the MP3 audio stream.
+            </summary>
+            <param name="metadata">String representing the MP3 stream metadata.</param>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.AacpFrame">
+            <summary>
+            A partial implementation of an AAC audio frame
+            </summary>
+            <remarks>
+            <para>
+            The primary purpose of this class is to represent an AAC audio file.
+            Many of the features not explicitly needed for audio rendering are omitted from the implementation.
+            </para>
+            <para>
+            Data on this format is readily discoverable in many books as well as by
+            searching for "AAC Frame" in your favorite search engine. As always,
+            Wikipedia is well stocked in all of these areas as well.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.AacpFrame.FrameHeaderSize">
+            <summary>
+            AAC headers are 7 bytes long.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.AacpFrame.SyncBytes">
+            <summary>
+            AAC frame synchronization bytes.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.AacpFrame.syncValue">
+            <summary>
+            Frame Sync is 12 1s
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.AacpFrame.sampleRateTable">
+            <summary>
+            A table of all of the possible sampling rates of AAC audio. 
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.AacpFrame.numberOfChannelsTable">
+            <summary>
+            A table of all of the possible number of channels for AAC audio.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.AacpFrame.bitsPerBlock">
+            <summary>
+            Number of bits per block for AAC audio.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.AacpFrame.samplesPerBlock">
+            <summary>
+            Number of samples per block for AAC audio.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AacpFrame.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the AacpFrame class.
+            </summary>
+            <remarks>
+            <para>
+            This class is a partial implementation of an AAC audio frame.  The primary purpose of this class is to represent an AAC
+            file. Many of the features not explicitly needed for audio rendering are omitted from the implementation.
+            </para>
+            <para>
+            Data on this format is readily discoverable in many books as well as by
+            searching for "AAC Frame" in your favorite search engine. As always,
+            Wikipedia is well stocked in all of these areas as well.
+            </para>
+            </remarks>
+            <param name="frameHeader">Byte array containing 4 bytes representing an AAC header.</param>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AacpFrame.IsValidFrame(System.Byte[])">
+            <summary>
+            Quickly checks an array of bytes to see if it represents a valid AAC frame header.
+            </summary>
+            <param name="frameHeader">Bytes representing an AAC frame header.</param>
+            <returns>true if the supplied bytes are a valid frame header, otherwise, false.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AacpFrame.Equals(System.Object)">
+            <summary>
+            Determines whether the specified Object is equal to the current Object
+            </summary>
+            <param name="obj">The object to compare with the current object.</param>
+            <returns>true if the specified Object is equal to the current Object; otherwise, false.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AacpFrame.GetHashCode">
+            <summary>
+            Generates a hash code for the current Object.
+            </summary>
+            <returns>A hash code for the current Object.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AacpFrame.CalculateBitRate(System.Int32,System.Int32)">
+            <summary>
+            Calculates the bit rate for an AAC frame.
+            </summary>
+            <param name="sampleRate">Sample rate of the AAC frame.</param>
+            <param name="numberOfChannels">Number of channels of the AAC frame.</param>
+            <returns>Bit rate of an AAC frame with the given sample rate and number of channels.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AacpFrame.ParseFrameSize(System.Byte[])">
+            <summary>
+            Parses the AAC frame header to find the actual size of the header.
+            </summary>
+            <param name="frameHeader">Byte array containing the AAC frame header.</param>
+            <returns>Actual size of the supplied AAC frame header.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AacpFrame.ParseSampleRate(System.Byte[])">
+            <summary>
+            Parses the sample rate from the supplied AAC frame header.
+            </summary>
+            <param name="frameHeader">Byte array containing the AAC frame header.</param>
+            <returns>The sample rate of the supplied AAC frame header.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AacpFrame.ParseChannel(System.Byte[])">
+            <summary>
+            Parses the number of channels from the supplied AAC frame header.
+            </summary>
+            <param name="frameHeader">Byte array containing the AAC frame header.</param>
+            <returns>The number of channels of the supplied AAC frame header.</returns>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.AudioFrame">
+            <summary>
+            Base class used to represent an audio frame.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.AudioFrame.#ctor">
+            <summary>
+            Initializes a new instance of the AudioFrame class.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.AudioFrame.NumberOfChannels">
+            <summary>
+            Gets or sets the number of channels of the audio frame.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.AudioFrame.BitRate">
+            <summary>
+            Gets or sets the bit rate of the audio frame.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.AudioFrame.SamplingRate">
+            <summary>
+            Gets or sets the sampling rate of the audio frame.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.AudioFrame.FrameSize">
+            <summary>
+            Gets or sets the frame size of the audio frame.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.BitTools">
+            <summary>
+            Helper methods for manipulating values at the byte and binary level.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.BitTools.SyncSafeIntegerSize">
+            <summary>
+            Defined by ID3v2 spec as 4 bytes
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.BitTools.ByteSize">
+            <summary>
+            1 Byte is 8 bits 
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.BitTools.MaskBits(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Masks out up to an integer sized (4 bytes) set of bits from an
+            array of bytes.
+            </summary>
+            <param name="data">An array of data in Little Endian Order</param>
+            <param name="firstBit">The bit index of the first bit</param>
+            <param name="maskSize">The length of the mask in bits</param>
+            <returns>An integer of the bits masked out</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.BitTools.ConvertSyncSafeToInt32(System.Byte[],System.Int32)">
+            <summary>
+            Converts a Syncronization Safe integer from the ID3v2 spec into a
+            standard integer.
+            </summary>
+            <param name="syncSafeData">
+            An array of bytes containing raw data in Syncronization Safe format
+            as defined in the ID3v2 spec. This means that it is a 4 byte
+            integer where the leading  bit of each byte is a 0. 
+            For Example:
+            01111111 01111111 01111111 01111111
+            Output would be:
+            00001111 11111111 11111111 11111111
+            Assumes syncSafeData array is in Big Endiah Order.
+            </param>
+            <param name="startIndex">
+            Where in the array of bytes, the syncsafe data starts. Note that
+            data's size is assumed to be 4 bytes in length.
+            </param>
+            <returns>
+            A standard integer. Note that this integer can only have a data
+            resolution of 28 bits (max value of this could only be 2^28 -1).
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.BitTools.FindBitPattern(System.Byte[],System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            Searches a byte array for a pattern of bits.
+            </summary>
+            <param name="data">
+            The array of bytes to search for the pattern within.
+            </param>
+            <param name="pattern">
+            The pattern of bytes to match with undesired bits zeroed out.
+            </param>
+            <param name="mask">
+            A mask to zero out bits that aren't part of the pattern.
+            </param>
+            <param name="startIndex">
+            The byte to begin the search from.
+            </param>
+            <returns>
+            Returns the location of the first byte in the pattern or -1 if
+            nothing was found or there was an error.
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.BitTools.FindBitPattern(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            Searches a byte array for a pattern of bits.
+            </summary>
+            <param name="data">
+            The array of bytes to search for the pattern within.
+            </param>
+            <param name="pattern">
+            The pattern of bytes to match with undesired bits zeroed out.
+            </param>
+            <param name="mask">
+            A mask to zero out bits that aren't part of the pattern.
+            </param>
+            <returns>
+            Returns the location of the first byte in the pattern or -1 if
+            nothing was found or there was an error.
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.BitTools.FindBytePattern(System.Byte[],System.Byte[],System.Int32)">
+            <summary>
+            Searches a byte array for a pattern of bytes.
+            </summary>
+            <param name="data">
+            The array of bytes to search for the pattern within.
+            </param>
+            <param name="pattern">
+            The pattern of bytes to match.
+            </param>
+            <param name="startIndex">
+            The byte to begin the search from.
+            </param>
+            <returns>
+            Returns the location of the first byte in the pattern or -1 if
+            nothing was found or there was an error.
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.BitTools.FindBytePattern(System.Byte[],System.Byte[])">
+            <summary>
+            Searches a byte array for a pattern of bytes.
+            </summary>
+            <param name="data">
+            The array of bytes to search for the pattern within.
+            </param>
+            <param name="pattern">
+            The pattern of bytes to match.
+            </param>
+            <returns>
+            Returns the location of the first byte in the pattern or -1 if
+            nothing was found or there was an error.
+            </returns>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.HeAacWaveFormat">
+            <summary>
+            A managed representation of the multimedia HEAACWAVEINFO 
+            structure declared in mmreg.h.
+            </summary>
+            <remarks>
+            This was designed for usage in an environment where PInvokes are not
+            allowed.
+            </remarks>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.HeAacWaveFormat.#ctor(Silverlight.Media.Parsers.WaveFormatExtensible)">
+            <summary>
+            Initializes a new instance of the HeAacWaveFormat class.
+            </summary>
+            <param name="waveFormatExtensible">WaveFormatExtensible instance representing this audio format.</param>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.HeAacWaveFormat.PayloadType">
+            <summary>
+            Gets or sets the the AAC payload type.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.HeAacWaveFormat.AudioProfileLevelIndication">
+            <summary>
+            Gets or sets the audio profile indication (as defined in the MPEG-4 audio specification) required to process the audio.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.HeAacWaveFormat.StructType">
+            <summary>
+            Gets or sets the structure type that describes the data that follows this structure (per MPEG-4 audio specification).
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.HeAacWaveFormat.ToHexString">
+            <summary>
+            Returns a string representing the structure in little-endian 
+            hexadecimal format.
+            </summary>
+            <remarks>
+            The string generated here is intended to be passed as 
+            CodecPrivateData for Silverlight's MediaStreamSource
+            </remarks>
+            <returns>
+            A string representing the structure in little-endia hexadecimal
+            format.
+            </returns>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.Channel">
+            <summary>
+            Reproduction mode of given audio data. Typically maps to the number of
+            output devices used to reproduce it.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.Channel.Stereo">
+            <summary>
+            Stereo: independent audio typically output to 2 speakers and is intended
+            to create a more realistic or pleasing representation of audio by
+            representing sound coming from multiple directons.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.Channel.JointStereo">
+            <summary>
+            Joint Stereo: The joining of multiple channels of audio to create another separate
+            one, to reduce the size of the file, or to increase the quality.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.Channel.DualChannel">
+            <summary>
+            Dual Channel: Two independent Mono channels. May overlap with stereo or may 
+            be completely independent as in the case of foreign language audio dubbing.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.Channel.SingleChannel">
+            <summary>
+            Single Channel: Also known as Mono. Typically the reproduction of a single
+            independent audio stream in one device or of the same independent audio stream
+            in multiple devices.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.MpegFrame">
+            <summary>
+            A partial implementation of an MPEG audio frame
+            </summary>
+            <remarks>
+            <para>
+            The primary purpose of this class is to represent an Mpeg 1 Layer 3
+            file or MP3 file for short. Many of the features not explicitly needed
+            for audio rendering are omitted from the implementation.
+            </para>
+            <para>
+            Data on this format is readily discoverable in many books as well as by
+            searching for "MP3 Frame" in your favorite search engine. As always,
+            Wikipedia is well stocked in all of these areas as well.
+            </para>
+            </remarks>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.MpegFrame.FrameHeaderSize">
+            <summary>
+            MP3 Headers are 4 Bytes long
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.MpegFrame.SyncBytes">
+            <summary>
+            MP3 frame synchronization bytes.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.MpegFrame.SyncValue">
+            <summary>
+            Frame Sync is 11 1s
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.MpegFrame.bitrateTable">
+            <summary>
+            A table of bitrates / 1000. These are all of the possible bitrates for Mpeg 1 - 2.5 audio. -1 encodes an error lookup.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Parsers.MpegFrame.samplingRateTable">
+            <summary>
+            A table of all of the possible sampling rates of Mpeg 1 - 2.5 audio. 
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.#ctor(System.Byte[])">
+            <summary>
+            Initializes a new instance of the MpegFrame class.
+            </summary>
+            <remarks>
+            <para>
+            This class is a partial implementation of an MPEG audio frame.  The primary purpose of this class is to represent an Mpeg 1 Layer 3
+            file or MP3 file for short. Many of the features not explicitly needed
+            for audio rendering are omitted from the implementation.
+            </para>
+            <para>
+            Data on this format is readily discoverable in many books as well as by
+            searching for "MP3 Frame" in your favorite search engine. As always,
+            Wikipedia is well stocked in all of these areas as well.
+            </para>
+            </remarks>
+            <param name="frameHeader">Byte array containing 4 bytes representing an MPEG Layer 3 header.</param>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegFrame.Version">
+            <summary>
+            Gets the Version of the MPEG standard this frame conforms to.
+            MPEG 1, MPEG 2, or MPEG 2.5
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegFrame.Layer">
+            <summary>
+            Gets the layer of complexity used in this frame.
+            Layer 1, 2, or 3.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegFrame.IsProtected">
+            <summary>
+            Gets a value indicating whether or not the frame is protected by a
+            Cyclic Redundancy Check (CRC). If true, then a 16 bit
+            CRC follows the header.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegFrame.BitrateIndex">
+            <summary>
+            Gets the Index into the bitrate table as defined in the MPEG spec.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegFrame.SamplingRateIndex">
+            <summary>
+            Gets the Index into the samplingrate table as defined in the MPEG spec.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegFrame.Padding">
+            <summary>
+            Gets the number of additional bytes of padding in this frame.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegFrame.Channels">
+            <summary>
+            Gets the output channel used to playback this frame.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.IsValidFrame(System.Byte[])">
+            <summary>
+            Quickly checks an array of bytes to see if it represents a valid MP3 frame header.
+            </summary>
+            <param name="frameHeader">Bytes representing an MP3 frame header.</param>
+            <returns>true if the supplied bytes are a valid frame header, otherwise, false.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.Equals(System.Object)">
+            <summary>
+            Determines whether the specified Object is equal to the current Object
+            </summary>
+            <param name="obj">The object to compare with the current object.</param>
+            <returns>true if the specified Object is equal to the current Object; otherwise, false.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.GetHashCode">
+            <summary>
+            Generates a hash code for the current Object.
+            </summary>
+            <returns>A hash code for the current Object.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.ToString">
+            <summary>
+            Converts the MpegFrame into a human readable form.
+            </summary>
+            <returns>
+            A textual representation of the MpegFrame.
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.CalculateBitRate(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Calculates the bit rate of the Mp3 audio from the data in the frame header.
+            </summary>
+            <param name="version">Mp3 version parsed out of the audio frame header.</param>
+            <param name="layer">Mp3 layer parsed out of the audio frame header.</param>
+            <param name="bitRateIndex">Mp3 Bit rate index parsed out of the audio frame header.</param>
+            <returns>Mp3 bit rate calculated from the provided values, if valid.  Otherwise, -2 is returned.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.LookupSamplingRate(System.Int32,System.Int32)">
+            <summary>
+            Looks up the sampling rate of the Mp3 audio from the data in the frame header.
+            </summary>
+            <param name="version">Mp3 version parsed out of the audio frame header.</param>
+            <param name="samplingRateIndex">Mp3 sampling rate index parsed out of the audio frame header.</param>
+            <returns>Mp3 sampling rate for the provided version and sampling rate index, if valid.  Otherwise, -1 is returned.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.CalculateFrameSize(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Calculates the frame size given the header information from the Mp3 frame.
+            </summary>
+            <param name="version">Mp3 version.</param>
+            <param name="layer">Mp3 layer.</param>
+            <param name="bitRate">Mp3 bit rate.</param>
+            <param name="samplingRate">Mp3 sampling rate.</param>
+            <param name="padding">Mp3 padding.</param>
+            <returns>Mp3 frame size calculated from the provided values, if valid.  Otherwise, -1 is returned.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.ParseVersion(System.Byte[])">
+            <summary>
+            Parses the version of the MPEG standard this frame header conforms to from the frame header.
+            </summary>
+            <param name="frameHeader"> The 4 byte header for this frame. </param>
+            <returns>
+            The version of the MPEG standard this frame conforms to.
+            1 = Mpeg 1
+            2 = Mpeg 2
+            3 = Mpeg 2.5
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.ParseLayer(System.Byte[])">
+            <summary>
+            Parses which complexity layer of the MPEG standard this frame conforms to from the frame header.
+            </summary>
+            <param name="frameHeader">The 4 byte header for this frame.</param>
+            <returns>The complexity layer this frame conforms to.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegFrame.ParseChannel(System.Byte[])">
+            <summary>
+            Parses the audio output mode of this frame's audio data.
+            </summary>
+            <param name="frameHeader">The 4 byte header for this frame.</param>
+            <returns>The audio output mode of this frame's audio data.</returns>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.MpegLayer3WaveFormat">
+            <summary>
+            A managed representation of the multimedia MPEGLAYER3WAVEFORMATEX 
+            structure declared in mmreg.h.
+            </summary>
+            <remarks>
+            This was designed for usage in an environment where PInvokes are not
+            allowed.
+            </remarks>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegLayer3WaveFormat.#ctor(Silverlight.Media.Parsers.WaveFormatExtensible)">
+            <summary>
+            Initializes a new instance of the MpegLayer3WaveFormat class.
+            </summary>
+            <param name="waveFormatExtensible">WaveFormatExtensible instance representing this audio format.</param>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegLayer3WaveFormat.Id">
+            <summary>
+            Gets or sets the FormatTag that defines what type of waveform audio this is.
+            </summary>
+            <remarks>
+            Set this to 
+            MPEGLAYER3_ID_MPEG = 1
+            </remarks>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegLayer3WaveFormat.BitratePaddingMode">
+            <summary>
+            Gets or sets the bitrate padding mode. 
+            This value is set in an Mp3 file to determine if padding is needed to adjust the average bitrate
+            to meet the sampling rate.
+            0 = adjust as needed
+            1 = always pad
+            2 = never pad
+            </summary>
+            <remarks>
+            This is different than the unmanaged version of MpegLayer3WaveFormat
+            which has the field Flags instead of this name.
+            </remarks>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegLayer3WaveFormat.BlockSize">
+            <summary>
+            Gets or sets the Block Size in bytes. For MP3 audio this is
+            144 * bitrate / samplingRate + padding
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegLayer3WaveFormat.FramesPerBlock">
+            <summary>
+            Gets or sets the number of frames per block.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.MpegLayer3WaveFormat.CodecDelay">
+            <summary>
+            Gets or sets the encoder delay in samples.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegLayer3WaveFormat.ToHexString">
+            <summary>
+            Returns a string representing the structure in little-endian 
+            hexadecimal format.
+            </summary>
+            <remarks>
+            The string generated here is intended to be passed as 
+            CodecPrivateData for Silverlight 2's MediaStreamSource
+            </remarks>
+            <returns>
+            A string representing the structure in little-endia hexadecimal
+            format.
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.MpegLayer3WaveFormat.ToString">
+            <summary>
+            Returns a string representing all of the fields in the object.
+            </summary>
+            <returns>
+            A string representing all of the fields in the object.
+            </returns>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.StringExtensions">
+            <summary>
+            Extensions for the standard string class.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.StringExtensions.ToLittleEndian(System.String)">
+            <summary>
+            <para>
+            Converts a string of characters from Big Endian byte order to
+            Little Endian byte order.
+            </para>
+            <para>
+            Assumptions this makes about the string. Every two characters
+            make up the smallest data unit (analogous to byte). The entire
+            string is the size of the systems natural unit of data (analogous
+            to a word).
+            </para>
+            </summary>
+            <param name="value">
+            A string in Big Endian Byte order.
+            </param>
+            <returns>
+            A string in Little Endian Byte order.
+            </returns>
+            <remarks>
+            This function was designed to take in a Big Endian string of
+            hexadecimal digits.
+            <example>
+            input:
+                DEADBEEF
+            output:
+                EFBEADDE
+            </example>
+            </remarks>
+        </member>
+        <member name="T:Silverlight.Media.Parsers.WaveFormat">
+            <summary>
+            Base class for wave format support.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.WaveFormat.#ctor(Silverlight.Media.Parsers.WaveFormatExtensible)">
+            <summary>
+            Initializes a new instance of the WaveFormat class.
+            </summary>
+            <param name="waveFormatExtensible">WaveFormatExtensible instance representing an audio format.</param>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.WaveFormat.WaveFormatExtensible">
+            <summary>
+            Gets the core WaveFormatExtensible strucutre representing the Mp3 audio data's
+            core attributes. 
+            </summary>
+            <remarks>
+            wfx.FormatTag must be WAVE_FORMAT_MPEGLAYER3 = 0x0055 = (85)
+            wfx.Size must be >= 12
+            </remarks>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.WaveFormat.ToHexString">
+            <summary>
+            Returns a string representing the structure in little-endian 
+            hexadecimal format.
+            </summary>
+            <remarks>
+            The string generated here is intended to be passed as 
+            CodecPrivateData for Silverlight's MediaStreamSource
+            </remarks>
+            <returns>
+            A string representing the structure in little-endia hexadecimal
+            format.
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.WaveFormat.AudioDurationFromBufferSize(System.UInt32)">
+            <summary>          
+            Calculate the duration of audio based on the size of the buffer          
+            </summary>          
+            <param name="audioDataSize">the buffer size in bytes</param>          
+            <returns>The duration of that buffer</returns>          
+        </member>
+        <member name="T:Silverlight.Media.Parsers.WaveFormatExtensible">
+            <summary>
+            A managed representation of the multimedia WAVEFORMATEX structure
+            declared in mmreg.h.
+            </summary>
+            <remarks>
+            This was designed for usage in an environment where PInvokes are not
+            allowed.
+            </remarks>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.WaveFormatExtensible.FormatTag">
+            <summary>
+            Gets or sets the audio format type. A complete list of format tags can be
+            found in the Mmreg.h header file.
+            </summary>
+            <remarks>
+            Silverlight 2 supports:
+            WMA 7,8,9
+            WMA 10 Pro
+            Mp3
+            WAVE_FORMAT_MPEGLAYER3 = 0x0055
+            </remarks>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.WaveFormatExtensible.Channels">
+            <summary>
+            Gets or sets the number of channels in the data. 
+            Mono            1
+            Stereo          2
+            Dual            2 (2 Mono channels)
+            </summary>
+            <remarks>
+            Silverlight 2 only supports stereo output and folds down higher
+            numbers of channels to stereo.
+            </remarks>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.WaveFormatExtensible.SamplesPerSec">
+            <summary>
+            Gets or sets the sampling rate in hertz (samples per second)
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.WaveFormatExtensible.AverageBytesPerSecond">
+            <summary>
+            Gets or sets the average data-transfer rate, in bytes per second, for the format.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.WaveFormatExtensible.BlockAlign">
+            <summary>
+            Gets or sets the minimum size of a unit of data for the given format in Bytes.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.WaveFormatExtensible.BitsPerSample">
+            <summary>
+            Gets or sets the number of bits in a single sample of the format's data.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Parsers.WaveFormatExtensible.Size">
+            <summary>
+            Gets or sets the size in bytes of any extra format data added to the end of the
+            WAVEFORMATEX structure.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.WaveFormatExtensible.ToHexString">
+            <summary>
+            Returns a string representing the structure in little-endian 
+            hexadecimal format.
+            </summary>
+            <remarks>
+            The string generated here is intended to be passed as 
+            CodecPrivateData for Silverlight 2's MediaStreamSource
+            </remarks>
+            <returns>
+            A string representing the structure in little-endia hexadecimal
+            format.
+            </returns>
+        </member>
+        <member name="M:Silverlight.Media.Parsers.WaveFormatExtensible.ToString">
+            <summary>
+            Returns a string representing all of the fields in the object.
+            </summary>
+            <returns>
+            A string representing all of the fields in the object.
+            </returns>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.DuplicateNameHandling">
+            <summary>
+            Describes how IniParser will handle duplicate names within a section.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.DuplicateNameHandling.Abort">
+            <summary>
+            Throw an InvalidOperationException when a duplicate name within a section is encountered.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.DuplicateNameHandling.Discard">
+            <summary>
+            Ignore the value when a dupliate name within a section is encountered.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.DuplicateNameHandling.Overwrite">
+            <summary>
+            Overwrite the existing value when a duplicate name within a section is encountered.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.IniParser">
+            <summary>
+            Parses INI file format.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.IniParser.iniComment">
+            <summary>
+            Regex to parse comment lines.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.IniParser.iniSectionName">
+            <summary>
+            Regex to parse section names.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.IniParser.iniKeyValue">
+            <summary>
+            Regex to parse key/value pairs.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.IniParser.duplicateNameHandling">
+            <summary>
+            Field to store duplicate name handling enumeration.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.IniParser.sections">
+            <summary>
+            Dictionary to store ini file sections and their associated key/value pairs.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.IniParser.#ctor(System.IO.TextReader)">
+            <summary>
+            Initializes a new instance of the IniParser class.
+            </summary>
+            <param name="textReader">TextReader representing an ini file.</param>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.IniParser.#ctor(System.IO.TextReader,Silverlight.Media.Playlist.DuplicateNameHandling)">
+            <summary>
+            Initializes a new instance of the IniParser class.
+            </summary>
+            <param name="textReader">TextReader representing an ini file.</param>
+            <param name="duplicateNameHandling">Specifies how IniParser will handle duplicate names.</param>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.IniParser.Sections">
+            <summary>
+            Gets the sections from the ini file containing name/value pairs.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.IniParser.Parse(System.IO.TextReader)">
+            <summary>
+            Parses the ini file.
+            </summary>
+            <param name="textReader">TextReader representing an ini file.</param>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.IPlaylist">
+            <summary>
+            Interface representing an audio stream playlist.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.IPlaylist.Items">
+            <summary>
+            Gets an ICollection of IPlaylist entries.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.IPlaylistItem">
+            <summary>
+            Interface representing an audio stream playlist entry.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.IPlaylistItem.DisplayName">
+            <summary>
+            Gets or sets the display name of the playlist entry.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.IPlaylistItem.Length">
+            <summary>
+            Gets or sets the length, in seconds, of the playlist entry.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.IPlaylistItem.Path">
+            <summary>
+            Gets or sets the path of the playlist entry.  This is usually a Uri, but can be a file path as well.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.IPlaylistParser">
+            <summary>
+            Interface representing a audio stream playlist parser.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.IPlaylistParser.ContentType">
+            <summary>
+            Gets the Internet content type supported by this playlist parser.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.IPlaylistParser.Parse(System.IO.Stream)">
+            <summary>
+            Parses the supplied Stream into an IPlaylist instance.
+            </summary>
+            <param name="stream">Stream representing the playlist data.</param>
+            <returns>Successfully parsed IPlaylist instance.</returns>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.M3uParser">
+            <summary>
+            Parses M3U playlist.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.M3uParser.M3uContentType">
+            <summary>
+            Content type of the m3u playlist format.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.M3uParser.M3uExtendedHeader">
+            <summary>
+            M3U Extended Header tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.M3uParser.M3uExtendedDetail">
+            <summary>
+            M3U Extended Detail tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.M3uParser.extendedDetailRegex">
+            <summary>
+            Regex to parse M3U Extended Detail.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.M3uParser.#ctor">
+            <summary>
+            Initializes a new instance of the M3uParser class.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.M3uParser.#ctor(System.IO.TextReader)">
+            <summary>
+            Initializes a new instance of the M3uParser class.
+            </summary>
+            <param name="textReader">TextReader representing an M3U file.</param>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.M3uParser.ContentType">
+            <summary>
+            Gets the supported content type of the M3U playlist format.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.M3uParser.Parse(System.IO.Stream)">
+            <summary>
+            Parses the M3U file.
+            </summary>
+            <param name="stream">Stream representing a M3U file.</param>
+            <returns>Parsed M3U playlist.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.M3uParser.Parse(System.IO.TextReader)">
+            <summary>
+            Parses the M3U playlist.
+            </summary>
+            <param name="textReader">TextReader representing the M3U playlist.</param>
+            <returns>Parsed M3U playlist.</returns>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.M3uPlaylist">
+            <summary>
+            Represents an M3U playlist.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.M3uPlaylist.items">
+            <summary>
+            M3U playlist items.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.M3uPlaylist.Items">
+            <summary>
+            Gets a collection of the M3U playlist items.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.M3uPlaylistItem">
+            <summary>
+            Represents an M3U playlist entry.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.M3uPlaylistItem.#ctor">
+            <summary>
+            Initializes a new instance of the M3uPlaylistItem class.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.PlaylistFactory">
+            <summary>
+            Factory to parse different playlist types.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.PlaylistFactory.Parse(System.String,System.IO.Stream)">
+            <summary>
+            Factory method that parses a given Stream with the appropriate playlist type, based on the supplied content type.
+            </summary>
+            <param name="contentType">Internet content type representing the playlist type of the Stream.</param>
+            <param name="stream">Stream representing the playlist data.</param>
+            <returns>Successfully parsed playlist.</returns>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.PlaylistItem">
+            <summary>
+            Represents a playlist entry.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.PlaylistItem.#ctor">
+            <summary>
+            Initializes a new instance of the PlaylistItem class.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.PlaylistItem.DisplayName">
+            <summary>
+            Gets or sets the display name of the playlist entry.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.PlaylistItem.Path">
+            <summary>
+            Gets or sets the path of the playlist entry.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.PlaylistItem.Length">
+            <summary>
+            Gets or sets the length of the media represented by this playlist entry.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.PlsParser">
+            <summary>
+            Parses the PLS playlist format.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.PlsParser.PlsContentType">
+            <summary>
+            Content type of the PLS playlist format.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.PlsParser.#ctor">
+            <summary>
+            Initializes a new instance of the PlsParser class.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.PlsParser.#ctor(System.IO.TextReader)">
+            <summary>
+            Initializes a new instance of the PlsParser class.
+            </summary>
+            <param name="textReader">TextReader representing a PLS playlist file.</param>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.PlsParser.ContentType">
+            <summary>
+            Gets the supported content type of the PLS playlist format.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.PlsParser.Parse(System.IO.Stream)">
+            <summary>
+            Parses the PLS file.
+            </summary>
+            <param name="stream">Stream representing a PLS file.</param>
+            <returns>A successfully parsed playlist.</returns>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.PlsParser.Parse(System.IO.TextReader)">
+            <summary>
+            Parses the PLS file.
+            </summary>
+            <param name="textReader">TextReader representing a PLS playlist file.</param>
+            <returns>A successfully parsed playlist.</returns>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.PlsPlaylist">
+            <summary>
+            Represents a PLS playlist.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.Playlist.PlsPlaylist.items">
+            <summary>
+            PLS playlist items.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.Playlist.PlsPlaylist.Items">
+            <summary>
+            Gets a collection of the PLS playlist items.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.Playlist.PlsPlaylistItem">
+            <summary>
+            Represents a PLS playlist entry.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.Playlist.PlsPlaylistItem.#ctor">
+            <summary>
+            Initializes a new instance of the PlsPlaylistItem class.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.ShoutcastMediaStreamSource">
+            <summary>
+            A Simple MediaStreamSource which can play back MP3 streams from
+            beginning to end.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastMediaStreamSource.currentMetadata">
+            <summary>
+            The current metadata for the Shoutcast stream.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastMediaStreamSource.workerException">
+            <summary>
+            Exception set by the worker thread.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastMediaStreamSource.emptyDict">
+            <summary>
+            Empty dictionary of MediaSampleAttributeKeys, as they are unused in this MedaStreamSource.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastMediaStreamSource.currentTimestamp">
+            <summary>
+            Current timestamp at which a sample should be rendered as measured in 100 nanosecond increments. 
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastMediaStreamSource.audioStreamDescription">
+            <summary>
+            MediaStreamDescription for the associated Mp3 stream.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastMediaStreamSource.audioStream">
+            <summary>
+            The Mp3 stream being played back.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.#ctor(System.Uri)">
+            <summary>
+            Initializes a new instance of the ShoutcastMediaStreamSource class.
+            </summary>
+            <param name="uri">Uri of the Mp3 stream.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.#ctor(System.Uri,System.Boolean)">
+            <summary>
+            Initializes a new instance of the ShoutcastMediaStreamSource class.
+            </summary>
+            <param name="uri">Uri of the Mp3 stream.</param>
+            <param name="includeMetadata">true to include metadata, otherwise, false.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.Finalize">
+            <summary>
+            Finalizes an instance of the ShoutcastMediaStreamSource class.
+            </summary>
+        </member>
+        <member name="E:Silverlight.Media.ShoutcastMediaStreamSource.MetadataChanged">
+            <summary>
+            Fired when the Mp3 metadata changed.
+            </summary>
+        </member>
+        <member name="E:Silverlight.Media.ShoutcastMediaStreamSource.Closed">
+            <summary>
+            Fired when the ShoutcastStream is closed.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastMediaStreamSource.StreamUri">
+            <summary>
+            Gets the Uri of the audio stream.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastMediaStreamSource.CurrentMetadata">
+            <summary>
+            Gets a value representing the current Shoutcast metadata.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastMediaStreamSource.IncludeMetadata">
+            <summary>
+            Gets a value indicating whether or not metadata is included in this MSS.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.Dispose">
+            <summary>
+            Releases all resources used by the MediaStreamSource.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.OnMetadataChanged">
+            <summary>
+            Fires the MetadataChanged event.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.OnClosed">
+            <summary>
+            Raises the Closed event.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the MediaStreamSource and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.OpenMediaAsync">
+            <summary>
+            Parses the passed in MediaStream to find the first frame and signals
+            to its parent MediaElement that it is ready to begin playback by calling
+            ReportOpenMediaCompleted.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.GetSampleAsync(System.Windows.Media.MediaStreamType)">
+            <summary>
+            Parses the next sample from the requested stream and then calls ReportGetSampleCompleted
+            to inform its parent MediaElement of the next sample.
+            </summary>
+            <param name="mediaStreamType">
+            Should always be Audio for this MediaStreamSource.
+            </param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.CloseMedia">
+            <summary>
+             Closes down the open media streams and otherwise cleans up the MediaStreamSource. The MediaElement can call this method when going through normal shutdown or as a result of an error.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.GetDiagnosticAsync(System.Windows.Media.MediaStreamSourceDiagnosticKind)">
+            <summary>
+            Gathers the diagnostic information requested.
+            </summary>
+            <param name="diagnosticKind">
+            A member of the MediaStreamSourceDiagnosticKind enumeration describing what type of information is desired.
+            </param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.SeekAsync(System.Int64)">
+            <summary>
+            <para>
+            Effectively a Null-Op for when a MediaElement requests a seek at the beginning
+            of the stream. This makes the stream semi-unseekable.
+            </para>
+            <para>
+            In a fuller MediaStreamSource, the logic here would be to actually seek to
+            the correct mpeg frame matching the seekToTime passed in.
+            </para>
+            </summary>
+            <param name="seekToTime">
+             The time to seek to in nanosecond ticks.
+            </param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.SwitchMediaStreamAsync(System.Windows.Media.MediaStreamDescription)">
+            <summary>
+            Called when a stream switch is requested on the MediaElement.
+            </summary>
+            <param name="mediaStreamDescription">
+            The stream switched to.
+            </param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.CreateHttpWebRequest(System.Uri,System.Boolean)">
+            <summary>
+            Creates an HttpWebRequest for streaming Shoutcast MP3 streams.
+            </summary>
+            <param name="uri">The Uri of the Shoutcast MP3 stream.</param>
+            <param name="includeMetadata">Indicates whether or not to include metadata with the Shoutcast Mp3 stream.</param>
+            <returns>An HttpWebRequest</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastMediaStreamSource.CleanupAudioStream">
+            <summary>
+            Cleans up all associated streaming resources.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.ShoutcastStream">
+            <summary>
+            Implements the Shoutcast streaming protocol.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.DefaultInitialBufferSize">
+            <summary>
+            The default initial buffer size.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.BufferOverwriteSleepTime">
+            <summary>
+            Number of milliseconds to sleep if a buffer read will overwrite our read buffer's pointer.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.NumberOfSecondsPerMp3Frame">
+            <summary>
+            Number of seconds per frame, per MP3 specification.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.DefaultSecondsToBuffer">
+            <summary>
+            Default number of seconds to buffer.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.NumberOfReadRetries">
+            <summary>
+            Number of times to retry reading from the initial buffer read.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.minimumBufferedBytes">
+            <summary>
+            Minimum number of bytes required to keep in the buffer.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.numberOfSecondsToBuffer">
+            <summary>
+            Number of seconds to buffer.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.backgroundWorker">
+            <summary>
+            Background worker to fill circular buffer from network stream.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.icyMetadata">
+            <summary>
+            Shoutcast metadata interval byte count.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.innerStream">
+            <summary>
+            Inner stream providing MP3 bytes.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.currentMetadata">
+            <summary>
+            Current stream metadata.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.currentMpegMetadata">
+            <summary>
+            Current parsed stream metadata.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.syncRoot">
+            <summary>
+            Circular buffer synchronization object.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.metadataCount">
+            <summary>
+            Number of bytes left in stream until metadata.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.audioStreamDescription">
+            <summary>
+            Audio stream description.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.audioSourceAttributes">
+            <summary>
+            Audio source attributes.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.currentFrameSize">
+            <summary>
+            Current frame size.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.circularBuffer">
+            <summary>
+            Circular buffer for audio stream data.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.bytesLeftInFrame">
+            <summary>
+            Number of bytes left in current frame.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.nextFrame">
+            <summary>
+            MpegFrame representing the next MP3 frame.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.mpegLayer3WaveFormat">
+            <summary>
+            MpegLayer3WaveFormat representing MP3 format.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.bufferingPercentage">
+            <summary>
+            Current percentage of the minimum required bytes in the circular buffer.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.mediaStreamSource">
+            <summary>
+            MediaStreamSource associated with this stream.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.includeMetadata">
+            <summary>
+            Represents whether or not this stream should request to receive metadata.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStream.metadataEncoding">
+            <summary>
+            Text encoding used to decode metadata bytes.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.#ctor(Silverlight.Media.ShoutcastMediaStreamSource,System.Net.HttpWebResponse)">
+            <summary>
+            Initializes a new instance of the ShoutcastStream class.
+            </summary>
+            <param name="mediaStreamSource">ShoutcastMediaStreamSource containing this ShoutcastStream.</param>
+            <param name="httpWebResponse">HttpWebResponse for MP3 stream request.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.#ctor(Silverlight.Media.ShoutcastMediaStreamSource,System.Net.HttpWebResponse,System.Int32)">
+            <summary>
+            Initializes a new instance of the ShoutcastStream class.
+            </summary>
+            <param name="mediaStreamSource">ShoutcastMediaStreamSource containing this ShoutcastStream.</param>
+            <param name="httpWebResponse">HttpWebResponse for MP3 stream request.</param>
+            <param name="numberOfSecondsToBuffer">Number of seconds of audio data to buffer.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.#ctor(Silverlight.Media.ShoutcastMediaStreamSource,System.Net.HttpWebResponse,System.Int32,System.Text.Encoding)">
+            <summary>
+            Initializes a new instance of the ShoutcastStream class.
+            </summary>
+            <param name="mediaStreamSource">ShoutcastMediaStreamSource containing this ShoutcastStream.</param>
+            <param name="httpWebResponse">HttpWebResponse for MP3 stream request.</param>
+            <param name="numberOfSecondsToBuffer">Number of seconds of audio data to buffer.</param>
+            <param name="metadataEncoding">Text encoding used to decode the Shoutcast metadata.</param>
+        </member>
+        <member name="E:Silverlight.Media.ShoutcastStream.Closed">
+            <summary>
+            Called after the ShoutcastStream has been completely shut down.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.CanRead">
+            <summary>
+            Gets a value indicating whether the current stream supports reading.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.CanSeek">
+            <summary>
+            Gets a value indicating whether the current stream supports seeking.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.CanWrite">
+            <summary>
+            Gets a value indicating whether the current stream supports writing.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.MediaInformation">
+            <summary>
+            Gets the value containing the current stream information.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.Length">
+            <summary>
+            Gets the length in bytes of the stream.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.Position">
+            <summary>
+            Gets or sets the position within the current stream.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.AudioStreamDescription">
+            <summary>
+            Gets a value containing the audio stream description.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.AudioSourceAttributes">
+            <summary>
+            Gets a value containing the audio source attributes.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.CurrentFrameSize">
+            <summary>
+            Gets a value representing the current MP3 frame size.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.WaveFormat">
+            <summary>
+            Gets a value representing the current MP3 wave format.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStream.BufferingPercentage">
+            <summary>
+            Gets a value representing the current percentage of the minimum required bytes in the circular buffer.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.
+            </summary>
+            <param name="buffer">An array of bytes. This method copies count bytes from buffer to the current stream.</param>
+            <param name="offset">The zero-based byte offset in buffer at which to begin copying bytes to the current stream.</param>
+            <param name="count">The number of bytes to be written to the current stream.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.WriteByte(System.Byte)">
+            <summary>
+            Writes a byte to the current position in the stream and advances the position within the stream by one byte.
+            </summary>
+            <param name="value">The byte to write to the stream.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            Sets the position within the current stream.
+            </summary>
+            <param name="offset">A byte offset relative to the origin parameter.</param>
+            <param name="origin">A value of type SeekOrigin indicating the reference point used to obtain the new position.</param>
+            <returns>The new position within the current stream.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.SetLength(System.Int64)">
+            <summary>
+            Sets the length of the current stream.
+            </summary>
+            <param name="value">The desired length of the current stream in bytes.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.ReadByte">
+            <summary>
+            Reads a byte from the stream and advances the position within the stream by one byte, or returns -1 if at the end of the stream.
+            </summary>
+            <returns>The unsigned byte cast to an Int32, or -1 if at the end of the stream.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.
+            </summary>
+            <param name="buffer">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between offset and (offset + count - 1) replaced by the bytes read from the current source.</param>
+            <param name="offset">The zero-based byte offset in buffer at which to begin storing the data read from the current stream.</param>
+            <param name="count">The maximum number of bytes to be read from the current stream.</param>
+            <returns>The total number of bytes read into the buffer. This can be less than the number of bytes requested if that many bytes are not currently available, or zero (0) if the end of the stream has been reached.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.Flush">
+            <summary>
+            Clears all buffers for this stream and causes any buffered data to be written to the underlying device.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.Dispose(System.Boolean)">
+            <summary>
+            Releases the unmanaged resources used by the Stream and optionally releases the managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.CreateAacPlusFormat(Silverlight.Media.Parsers.AudioFrame)">
+            <summary>
+            Initializes a WaveFormatExtensible instance representing an AAC+ frame.
+            </summary>
+            <param name="audioFrame">Audio frame representing an AAC+ frame.</param>
+            <returns>A WaveFormatExtensible for the supplied audio frame.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.CreateMp3WaveFormat(Silverlight.Media.Parsers.AudioFrame)">
+            <summary>
+            Initializes a WaveFormatExtensible instance representing an MP3 frame.
+            </summary>
+            <param name="audioFrame">Audio frame representing an MP3 frame.</param>
+            <returns>A WaveFormatExtensible for the supplied audio frame.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.ReadOrPeekBuffer(System.Byte[],System.Int32,System.Boolean)">
+            <summary>
+            Reads or Peeks data from the circular buffer.
+            </summary>
+            <param name="buffer">Buffer in which to put the read or peeked data.</param>
+            <param name="count">Number of bytes to read or peek.</param>
+            <param name="shouldPeek">true if the data should be peeked from the circular buffer, otherwise the data is read from the circular buffer.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.ParseInitialBuffer(System.Byte[])">
+            <summary>
+            Parses initial audio stream byte buffer.
+            </summary>
+            <param name="initialBuffer">Initial bytes from the audio stream.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.ForceReadFromStream(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Forces the specified number of bytes to be read from the inner stream.
+            </summary>
+            <param name="buffer">An array of bytes. When this method returns, the buffer contains the specified byte array with the values between offset and (offset + count - 1) replaced by the bytes read from the current source.</param>
+            <param name="offset">The zero-based byte offset in buffer at which to begin storing the data read from the current stream.</param>
+            <param name="count">The maximum number of bytes to be read from the current stream.</param>
+            <returns>The total number of bytes read into the buffer. This should be the same as the count parameter.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.CalculateCircularBufferSize(System.Int32)">
+            <summary>
+            Calculates the buffer size required for this audio stream.
+            </summary>
+            <param name="initialFrameSize">Size, in bytes, of the initial MP3 frame.</param>
+            <returns>The required size of the circular buffer.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Method used by the BackgroundWorker to read audio data from the inner stream.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A DoWorkEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.ParseShoutcastHeaders(System.Byte[]@)">
+            <summary>
+            Parses the Shoutcast specific headers.  This method is different because of how Shoutcast responds to an HttpWebRequest.  The headers need to be parsed, then removed from the initialBuffer.
+            </summary>
+            <param name="initialBuffer">Initial data buffer from the audio stream.</param>
+            <returns>ShoutcastStreamInformation containing information about the audio stream.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.FindStreamInformation(System.Net.HttpWebResponse,System.Byte[]@)">
+            <summary>
+            Parses the headers from the audio stream.
+            </summary>
+            <param name="httpWebResponse">HttpWebResponse from the server sending the audio stream.</param>
+            <param name="initialBuffer">Initial data buffer from the audio stream.</param>
+            <returns>ShoutcastStreamInformation containing information about the audio stream.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.RunWorkerCompleted(System.Object,System.ComponentModel.RunWorkerCompletedEventArgs)">
+            <summary>
+            Handles the RunWorkerCompleted event of the background worker.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A RunWorkerCompletedEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.ReadIncludesMetadata(System.Int32)">
+            <summary>
+            Indicates if reading the specified number of bytes from the circular buffer contains MP3 metadata.
+            </summary>
+            <param name="count">Number of bytes to read from the circular buffer.</param>
+            <returns>true if reading the specified number of bytes from the circular buffer contains MP3 metadata, otherwise, false.</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.SyncStream(System.Byte[],Silverlight.Media.Parsers.AudioFrame@)">
+            <summary>
+            Synchronizes the MP3 data on a frame header.
+            </summary>
+            <param name="audioData">Byte array representing a chunk of MP3 data.</param>
+            <param name="mpegFrame">Assigned to the resultant, parsed MpegFrame pointed to by the return value.</param>
+            <returns>Offset into the audioData parameters representing the next, valid MpegFrame</returns>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.ResyncStream">
+            <summary>
+            Resynchronizes the audio stream to the next valid Mp3 frame.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStream.SetupNextFrame">
+            <summary>
+            Reads the next MP3 frame header.
+            </summary>
+        </member>
+        <member name="T:Silverlight.Media.ShoutcastStreamInformation">
+            <summary>
+            Represents the metadata information about an MP3 stream.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStreamInformation.IcyNoticeBase">
+            <summary>
+            Base name of the ICY Notice header tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStreamInformation.IcyName">
+            <summary>
+            ICY Name header tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStreamInformation.IcyGenre">
+            <summary>
+            ICY Genre header tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStreamInformation.IcyUrl">
+            <summary>
+            ICY Url header tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStreamInformation.IcyPublic">
+            <summary>
+            ICY Public header tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStreamInformation.IcyBitrate">
+            <summary>
+            ICY Bitrate headter tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStreamInformation.IcyMetadataInterval">
+            <summary>
+            ICY Metadata Interval header tag.
+            </summary>
+        </member>
+        <member name="F:Silverlight.Media.ShoutcastStreamInformation.notices">
+            <summary>
+            List of ICY Notice header tags.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStreamInformation.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Initializes a new instance of the ShoutcastStreamInformation class.
+            </summary>
+            <param name="headers">IDictionary&lt;string, string&gt; of HTTP headers.</param>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStreamInformation.Name">
+            <summary>
+            Gets the name of the MP3 stream.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStreamInformation.Genre">
+            <summary>
+            Gets the genre of the MP3 stream.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStreamInformation.Url">
+            <summary>
+            Gets the url of the MP3 stream.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStreamInformation.IsPublic">
+            <summary>
+            Gets a value indicating whether or not this MP3 stream is public.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStreamInformation.BitRate">
+            <summary>
+            Gets the bitrate of the MP3 stream.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStreamInformation.MetadataInterval">
+            <summary>
+            Gets the metadata interval of the MP3 stream.
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStreamInformation.Notices">
+            <summary>
+            Gets the notices of the MP3 stream..
+            </summary>
+        </member>
+        <member name="P:Silverlight.Media.ShoutcastStreamInformation.ContentType">
+            <summary>
+            Gets the HTTP content type.
+            </summary>
+        </member>
+        <member name="M:Silverlight.Media.ShoutcastStreamInformation.ParseHeaders(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Parses the supplied HTTP headers.
+            </summary>
+            <param name="headers">IDictionary&lt;string, string&gt; of HTTP headers.</param>
+        </member>
+    </members>
+</doc>

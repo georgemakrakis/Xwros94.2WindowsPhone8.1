@@ -1,0 +1,84 @@
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\ApplicationIcon.png
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Background.png
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\AppManifest.xaml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone_Debug_AnyCPU.xap
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\Xwros 94,2 Windows Phone 8.0.csprojResolveAssemblyReference.cache
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\App.g.cs
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\MainPage.g.cs
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.g.resources
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\XapCacheFile.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\ApplicationIcon.png
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Background.png
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\AppManifest.xaml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Silverlight.Media.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Silverlight.Media.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Silverlight.Media.Phone.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\App.g.cs
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\MainPage.g.cs
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\Shoutcast.Sample.Phone.g.resources
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\XapCacheFile.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\resources.pri
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\AppxManifest.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Xwros 94,2 Windows Phone 8.0.build.appxrecipe
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\Bin\Debug\Xwros 94,2 Windows Phone 8.0_Debug_AnyCPU.xap
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\Xwros 94,2 Windows Phone 8.0.csproj.GenerateResource.Cache
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\priconfig.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\priconfig.xml.intermediate
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\layout.resfiles
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\layout.resfiles.intermediate
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\resources.resfiles
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\resources.resfiles.intermediate
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\pri.resfiles
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\pri.resfiles.intermediate
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\qualifiers.txt
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\qualifiers.txt.intermediate
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\ProjectArchitectures.txt
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\MDILProjectFiles.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.0\obj\Debug\Xwros 94,2 Windows Phone 8.0.csprojResolveAssemblyReference.cache
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\ApplicationIcon.png
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Background.png
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\resources.pri
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\AppxManifest.xml
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Xwros 94,2 Windows Phone 8.0.build.appxrecipe
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\AppManifest.xaml
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Xwros 94,2 Windows Phone 8.0_Debug_AnyCPU.xap
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Silverlight.Media.Phone.dll
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Silverlight.Media.Phone.pdb
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Silverlight.Media.Phone.xml
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\App.g.cs
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\MainPage.g.cs
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\Shoutcast.Sample.Phone.g.resources
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\Xwros 94,2 Windows Phone 8.0.csproj.GenerateResource.Cache
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\priconfig.xml
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\priconfig.xml.intermediate
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\layout.resfiles
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\layout.resfiles.intermediate
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\resources.resfiles
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\resources.resfiles.intermediate
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\pri.resfiles
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\pri.resfiles.intermediate
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\qualifiers.txt
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\qualifiers.txt.intermediate
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\ProjectArchitectures.txt
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\MDILProjectFiles.xml
+C:\Users\George\OneDrive\My Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\XapCacheFile.xml

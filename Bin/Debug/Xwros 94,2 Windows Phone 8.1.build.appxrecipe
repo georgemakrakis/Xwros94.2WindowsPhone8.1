@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-MV07AUN</Machine>
+    <WindowsUser>George Makrakis</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>1ab7b8ba-46e0-4533-833b-5814de82ce18</PackageIdentityName>
+    <PackageIdentityPublisher>CN=George</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\Shoutcast.Sample.Phone.dll">
+      <PackagePath>Shoutcast.Sample.Phone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Silverlight.Media.Shoutcast\Bin\Debug\Silverlight.Media.Phone.dll">
+      <PackagePath>Silverlight.Media.Phone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Silverlight.Media.Shoutcast\Bin\Debug\Silverlight.Media.Phone.xml">
+      <PackagePath>Silverlight.Media.Phone.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\ApplicationIcon.png">
+      <PackagePath>ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\appbar.transport.pause.rest.png">
+      <PackagePath>Assets\appbar.transport.pause.rest.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\appbar.transport.play.rest.png">
+      <PackagePath>Assets\appbar.transport.play.rest.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Background.png">
+      <PackagePath>Background.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\SplashScreenImage.jpg">
+      <PackagePath>SplashScreenImage.jpg</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Silverlight.Media.Shoutcast\GPL.txt">
+      <PackagePath>GPL.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Silverlight.Media.Shoutcast\LICENSE.txt">
+      <PackagePath>LICENSE.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

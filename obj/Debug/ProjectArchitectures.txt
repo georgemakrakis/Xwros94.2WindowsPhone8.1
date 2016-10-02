@@ -1,0 +1,2 @@
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Silverlight.Media.Shoutcast\Silverlight.Media.Shoutcast.Phone.csproj;neutral
+C:\Users\George Makrakis\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Xwros 94,2 Windows Phone 8.1\Xwros 94,2 Windows Phone 8.1.csproj;neutral

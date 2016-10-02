@@ -1,0 +1,34 @@
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\ApplicationIcon.png
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\Background.png
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\AppManifest.xaml
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone_Debug_AnyCPU.xap
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.dll
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.pdb
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.xml
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.csprojResolveAssemblyReference.cache
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\obj\Debug\App.g.cs
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\obj\Debug\MainPage.g.cs
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.g.resources
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\Desktop\Src\Shoutcast.Sample.Phone\obj\Debug\XapCacheFile.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\ApplicationIcon.png
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Background.png
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\AppManifest.xaml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Shoutcast.Sample.Phone_Debug_AnyCPU.xap
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\Bin\Debug\Silverlight.Media.Phone.xml
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.csprojResolveAssemblyReference.cache
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\App.g.cs
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\MainPage.g.cs
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.g.resources
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.dll
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\Shoutcast.Sample.Phone.pdb
+C:\Users\George\Documents\Visual Studio 2015\Projects\Shoutcast Stream\Src\Shoutcast.Sample.Phone\obj\Debug\XapCacheFile.xml
